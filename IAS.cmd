@@ -1,4 +1,4 @@
-@set iasver=1.2
+@set iasver=1.1
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -277,7 +277,7 @@ if not [%%#]==[] (echo "%%#" | find "127.69" %nul1% && (echo "%%#" | find "127.6
 if defined old (
 echo ________________________________________________
 %eline%
-echo You are running outdated version IAS %iasver%
+echo   You are running old version of IAS %iasver%
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
@@ -401,12 +401,12 @@ echo:
 echo:
 echo:
 echo:
-echo:                This script is NOT working with latest IDM.     
+echo:                This script is working with the latest IDM.     
 echo:            ___________________________________________________ 
 echo:                                                               
 echo:               [1] Freeze Trial
 echo:               [2] Activate
-echo:               [3] Reset Activation / Trial
+echo:               [3] Trial Reset
 echo:               _____________________________________________   
 echo:                                                               
 echo:               [4] Download IDM
@@ -940,3 +940,4 @@ exit /b
 
 ::========================================================================================================================================
 :: Leave empty line below
+
